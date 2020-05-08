@@ -72,24 +72,23 @@ function createRock(x) {
    * This function moves the rock. (2 pixels at a time
    * seems like a good pace.)
    */
-<<<<<<< HEAD
   
   
   GAME.appendChild(rock)
   ROCKS.push(rock);
-=======
+
    ROCKS.push
->>>>>>> 027512929ff693ff3bee2456549cc9ca3121024d
+
   function moveRock() {
       rock.style.top = `${top += 2}px`
       if (!checkCollision(rock) && top < 400) {
           window.requestAnimationFrame(moveRock)
       } else if (!checkCollision(rock) && top === 400) {
-<<<<<<< HEAD
+
           GAME.removeChild(rock)
-=======
+
           element.remove(rock)
->>>>>>> 027512929ff693ff3bee2456549cc9ca3121024d
+
       } else if (checkCollision(rock) === true) {
           endGame()
       }
@@ -115,14 +114,13 @@ function createRock(x) {
 
   // Add the rock to ROCKS so that we can remove all rocks
   // when there's a collision.
-<<<<<<< HEAD
+D
   // Finally, return the rock element you've created
   window.requestAnimationFrame(moveRock)
   
-=======
+
   // Finally, return the rock element you've created.
   window.requestAnimationFrame(moveRock)
->>>>>>> 027512929ff693ff3bee2456549cc9ca3121024d
   return rock
 }
 
@@ -134,15 +132,13 @@ function createRock(x) {
  */
 function endGame() {
   clearInterval(gameInterval)
-<<<<<<< HEAD
   for (let i = 0; i < ROCKS.length; i++) {
     ROCKS[i].remove()
   }
   document.removeEventListener("keydown", moveDodger)
-=======
   ROCKS.length === 0;
   window.removeEventListener("keydown", moveDodger)
->>>>>>> 027512929ff693ff3bee2456549cc9ca3121024d
+d
   alert("You Lose!")
 }
 
