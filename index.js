@@ -153,13 +153,14 @@ function moveDodger(e) {
   moveDodgerRight()
   } 
 
-
+function moveDodgerLeft() {
   if (e.which === 37) {
   window.addEventListener("keydown", moveDodgerLeft)
   } else if (e.which === 39) {
-  window.addEventListenerventListener("keydown", moveDodgerRight)
+  window.addEventListenerventListener("keydown", moveDodgerRight);
   }
->>>>>>> 027512929ff693ff3bee2456549cc9ca3121024d
+}
+
   // implement me!
   /**
    * This function should call `moveDodgerLeft()`
@@ -168,7 +169,7 @@ function moveDodger(e) {
    * we've declared for you above.)
    * And be sure to use the functions declared below!
    */
-}
+
 
 function moveDodgerLeft() {
   var leftNumbers = DODGER.style.left.replace("px", "") 
