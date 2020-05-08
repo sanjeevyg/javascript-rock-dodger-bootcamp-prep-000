@@ -138,12 +138,10 @@ function endGame() {
   document.removeEventListener("keydown", moveDodger)
   ROCKS.length === 0;
   window.removeEventListener("keydown", moveDodger)
-d
   alert("You Lose!")
 }
 
-function moveDodger(e) {
-<<<<<<< HEAD
+function moveDodger(e) {<<<<<< HEAD
   
   if (e.which === LEFT_ARROW) {
   e.stopPropagation()
