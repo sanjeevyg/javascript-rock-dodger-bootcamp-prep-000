@@ -141,7 +141,8 @@ function endGame() {
   alert("You Lose!")
 }
 
-function moveDodger(e) {<<<<<< HEAD
+function moveDodger(e) {
+<<<<<<< HEAD
   
   if (e.which === LEFT_ARROW) {
   e.stopPropagation()
