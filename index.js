@@ -142,7 +142,6 @@ function endGame() {
 }
 
 function moveDodger(e) {
-<<<<<<< HEAD
   
   if (e.which === LEFT_ARROW) {
   e.stopPropagation()
@@ -154,7 +153,7 @@ function moveDodger(e) {
   moveDodgerRight()
   } 
 
-=======
+
   if (e.which === 37) {
   window.addEventListener("keydown", moveDodgerLeft)
   } else if (e.which === 39) {
